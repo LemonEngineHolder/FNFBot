@@ -20,9 +20,9 @@ namespace FNFBot20
             foreach (FNFSong.FNFNote n in sect.Notes)
             {
                 n.Time = Math.Round(n.Time);
-                if (sect.MustHitSection && n.Type < (FNFSong.NoteType) 4)
+                if (sect.MustHitSection && n.Type < (FNFSong.NoteType) 9)
                     notes.Add(n);
-                else if (n.Type >= (FNFSong.NoteType) 4 && !sect.MustHitSection)
+                else if (n.Type >= (FNFSong.NoteType) 9 && !sect.MustHitSection)
                     notes.Add(n);
             }
 
